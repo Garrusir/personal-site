@@ -1,0 +1,6 @@
+# Группа 1
+User-agent: *
+Disallow: /files/
+Disallow: /privacy_policy.html
+Disallow: /gay.php
+Sitemap: http://duetid.ru/sitemap.xml
