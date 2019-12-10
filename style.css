@@ -10,6 +10,58 @@ body {
 	font-size: 1.2rem;
 }
 
+/*NEW YEAR*/
+article.christmas{
+	background-color: #8d1414;
+	z-index: 1;
+	color: #fcfcfc;
+	padding: 1rem 2rem;
+	margin: 0;
+	padding: 80px 0;
+	box-shadow: 0 38px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.christmas_btn{
+	text-shadow: -1px 0px 0px rgba(0,0,0,.6);
+}
+
+.christmas .promo-content {
+	margin-right: 50px;
+}
+
+.main_christmas header:before, .main_christmas header:after {
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 50px;
+	/*background: #f2f2f2;*/
+	background-color: #8d1414;
+	top: 100%;
+	z-index: -52;
+	-webkit-transform:translateY(-25px) rotate(45deg);
+    -webkit-transform-origin:0 0;
+    transform-origin:0 0;
+    transform:translateY(-25px) rotate(45deg);
+    /*z-index:1;*/
+}
+.main_christmas header:before {
+    left:calc(50% - 25px);
+    z-index: -52;
+}
+
+.main_christmas .white {
+    /*background:#f2f2f2;*/
+    background: #8d1414;
+    width:calc(50% - 25px);
+    height:30px;
+    position:absolute;
+    bottom:-5px;
+    border-color:orange;
+    z-index: -52;
+}
+
+/*end of christmas*/
+
 .container {
 	width: 1200px;
 	margin: 0 auto	;
@@ -39,6 +91,7 @@ header:before, header:after {
 	width: 50px;
 	height: 50px;
 	background: #f2f2f2;
+	/*background-color: #8d1414;*/
 	top: 100%;
 	-webkit-transform:translateY(-25px) rotate(45deg);
     -webkit-transform-origin:0 0;
@@ -57,11 +110,13 @@ header:after {
 
 .white {
     background:#f2f2f2;
+    /*background: #8d1414;*/
     width:calc(50% - 25px);
     height:30px;
     position:absolute;
     bottom:-5px;
     border-color:orange;
+    /*z-index: -52;*/
 }
 .white.left {
     left:0;
@@ -107,7 +162,7 @@ header .contacts-content div {
 video {
 	/*filter: blur(2px);*/
 	z-index: -100;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -274,7 +329,7 @@ nav a:hover {
 	font-weight: bolder;
 	text-transform: uppercase;
 	background-color: #297963;
-	background-image: linear-gradient(to right, #25aae1, #40e495, #30dd8a, #2bb673);
+	background-image: linear-gradient(to right, #F9D423, #AA3A38, #670a0b, #F9D423);
     box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
 
 	-moz-transition: all .4s ease-in-out;
@@ -298,6 +353,7 @@ nav a:hover {
 }
 .promo {
 	padding-top: 100px;
+	background-color: #fff;
 }
 .promo>div{
 	display: flex;
